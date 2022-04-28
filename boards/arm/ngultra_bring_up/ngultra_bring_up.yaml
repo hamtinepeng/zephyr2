@@ -1,0 +1,7 @@
+identifier: ngultra_bring_up
+name: NG-Ultra bring-up
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
