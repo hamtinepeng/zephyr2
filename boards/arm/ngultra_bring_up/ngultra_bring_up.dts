@@ -14,5 +14,6 @@
 
 	chosen {
 		zephyr,sram = &eram0;
+		zephyr,console = &uart0;
 	};
 };

@@ -1,0 +1,10 @@
+# NanoXplore UART
+
+# Copyright (c) 2022, NanoXplore
+# SPDX-License-Identifier: Apache-2.0
+
+config UART_NX_NGULTRA
+	bool "NanoXplore UART driver"
+	select SERIAL_HAS_DRIVER
+	help
+	  This option enables the UART driver for NG-Ultra.

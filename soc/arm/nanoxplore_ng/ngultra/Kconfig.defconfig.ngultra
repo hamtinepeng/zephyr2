@@ -9,4 +9,8 @@ config SOC
 config NUM_IRQS
 	default 192
 
+config UART_NX_NGULTRA
+	default y
+	depends on SERIAL
+
 endif # SOC_NGULTRA

@@ -4,6 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+#include <freq.h>
 #include <mem.h>
 #include <arm/armv8-r.dtsi>
 #include <dt-bindings/interrupt-controller/arm-gic.h>
@@ -49,6 +50,15 @@
 			interrupt-controller;
 			#interrupt-cells = <4>;
 			label = "GIC";
+			status = "okay";
+		};
+
+		uart0: uart@d706000 {
+			compatible = "nanoxplore,ngultra-uart";
+			reg = <0xd706000 0x1000>;
+			current-speed = <115200>;
+			clock-frequency = <DT_FREQ_M(50)>;
+			label = "UART_0";
 			status = "okay";
 		};
 	};
